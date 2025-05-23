@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #9e9898 url(img/bg.jpeg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 55% 0;
+  background-attachment: fixed;
+  padding: 20px;
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+header .logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+header .logo svg {
+  width: 18px;
+  transform: rotate(-45deg);
+  margin-right: 8px;
+}
+
+.nav-wrap nav ul li {
+  list-style-type: none;
+  width: 100%;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+.menu button.menu-btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.menu svg {
+  width: 18px;
+}
+
+.nav-wrap nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-wrap nav ul {
+  padding-left: 0;
+}
+
+.nav-wrap nav ul li a {
+  display: block;
+  padding: 10px 10px 10px 0;
+  width: 100%;
+}
+
+.nav-wrap {
+  position: absolute;
+  right: 30px;
+  top: 70px;
+  background-color: #6b1e1e93;
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+}
+
+.nav-wrap button {
+  margin-top: 20px;
+}
+
+button {
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+
+.container {
+  margin-top: 30px;
+  /*background-color: #9e989859;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px); */
+}
+
+.hero-heading h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+}
+
+.rule {
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff73;
+  margin-top: 30px;
+}
+
+.hero-para {
+  width: 85%;
+  margin-top: 30px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+}
+
+.button-wrap {
+  margin-top: 30px;
+}
+
+.partners {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.partners img {
+  width: 20%;
+}
+
+.nasa {
+  width: 50px !important;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.huawei {
+  width: 40px !important;
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (min-width: 850px) {
+  body {
+    padding: 20px 50px;
+    background-position: 25% 0;
+  }
+
+  .nav-wrap {
+    right: 60px;
+  }
+
+  .hero-heading h2 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 1019px) {
+  .desktop-menu, .desktop-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1019px) {
+  body {
+    padding: 50px 90px 20px;
+    background-position: 10% 0;
+  }
+
+  header nav.desktop-menu ul {
+    display: flex;
+    padding-left: 0;
+  }
+  
+  header nav.desktop-menu ul li {
+    margin: 0 10px;
+  }
+
+  header nav.desktop-menu ul li {
+    list-style-type: none;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .menu, .nav-wrap {
+    display: none;
+  }
+
+  .container {
+    margin-top: 70px;
+  }
+
+  .rule {
+    max-width: 600px;
+  }
+
+  .hero-para {
+    max-width: 600px;
+  }
+
+  .hero-para p {
+    letter-spacing: 1px;
+    line-height: 25px;
+  }
+  
+}
